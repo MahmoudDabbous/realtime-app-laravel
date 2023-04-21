@@ -16,7 +16,6 @@ return new class extends Migration
             $table->id();
             $table->string('title');
             $table->jsonb('body');
-            $table->foreignIdFor(User::class)->constrained('users');
             $table->timestamps();
         });
     }
